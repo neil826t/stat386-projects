@@ -3,7 +3,7 @@ layout: post
 title:  "The Simplex method ... in real life!"
 date:   2022-09-22
 author: Neil Thompson
-description: Optimizing simply on big data using SciPy's linear optimization algorithm
+description: Optimizing simply on big data using either your own version of Simplex or SciPy's linear optimization algorithm
 image: assets/images/Simplex-method-3-dimensions.png
 ---
 
@@ -30,10 +30,14 @@ Over the summer I had the opportunity to work as a data scientist for a [company
 - **Big data optimization**: All this information comprised tens of thousands of pieces of data, which isn’t so much for a computer but quite a bit for any brain in the office! With the help of Python (described below), I was able to find an “optimal” solution for how, when, and where we should buy leads, to maximize total profit with respect to all the limits we had as a company.
 
 ## Linear Optimization
-In this example, I employed a specific type of optimization called linear optimization, also known as [linear programming](https://en.wikipedia.org/wiki/Linear_programming). If general optimization is like finding the lowest point in a valley, linear optimization with linear constraints is like finding the lowest point in a soccer ball with lots of flat sides. Linear optimization is easier to solve than most other forms of (nonlinear) optimization, because the function to find the best thing (objective or loss function) is linear (a straight line). If changing one thing makes the solution better, than changing it more like that will just make the solution even better. The caveat is that eventually you will probably run into some constraint, like in the case of our leads and sales, not having enough salespeople to call the leads back.
+In this example, I employed a specific type of optimization called linear optimization, also known as [linear programming](https://en.wikipedia.org/wiki/Linear_programming). If general optimization is like finding the lowest point in a valley, linear optimization with linear constraints is like finding the lowest point in a soccer ball with lots of flat sides.Linear optimization is easier to solve than most other forms of (nonlinear) optimization, because the function to find the best thing (objective or loss function) is linear (a straight line). If changing one thing makes the solution better, than changing it more like that will just make the solution even better. The caveat is that eventually you will probably run into some constraint, like in the case of our leads and sales, not having enough salespeople to call the leads back.
 
 ## The Simplex method
-Linear optimization can be solved so quickly due to an algorithm called the Simplex method. Let’s go back to the idea of the soccer ball (and remember, normally the computer has to deal with a soccer ball in n-dimensional space where n is a lot bigger than 2). To find the lowest point on a soccer ball, we actually know that it has to be at one of the corners (or vertices), so we can start at any vertex and just walk around the edges, getting lower and lower until we come to the bottom. The algorithm is mathematically simple enough that I have done it by hand and coded it in Python. A portion of my code is shown below, and the full result is pushed [here](https://github.com/neil826t/Coursework/blob/main/Applied_and_Computational_Math/simplex.py).
+Linear optimization can be solved so quickly due to an algorithm called the Simplex method. Let’s go back to the idea of the soccer ball (and remember, normally the computer has to deal with a soccer ball in n-dimensional space where n is a lot bigger than 2). To find the lowest point on a soccer ball, we actually know that it has to be at one of the corners (or vertices), so we can start at any vertex and just walk around the edges, getting lower and lower until we come to the bottom. 
+
+<img src="https://github.com/neil826t/stat386-projects/blob/main/assets/images/Simplex-method-3-dimensions.png" alt="" style="width:150px;"/> [Image source](https://commons.wikimedia.org/wiki/File:Simplex-method-3-dimensions.png)
+
+The algorithm is mathematically simple enough that I have done it by hand and coded it in Python. A portion of my code is shown below, and the full result is pushed [here](https://github.com/neil826t/Coursework/blob/main/Applied_and_Computational_Math/simplex.py).
 
 ```    
 def solve(self):
