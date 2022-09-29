@@ -35,7 +35,9 @@ In this example, I employed a specific type of optimization called linear optimi
 ## The Simplex method
 Linear optimization can be solved so quickly due to an algorithm called the Simplex method. Let’s go back to the idea of the soccer ball (and remember, normally the computer has to deal with a soccer ball in n-dimensional space where n is a lot bigger than 2). To find the lowest point on a soccer ball, we actually know that it has to be at one of the corners (or vertices), so we can start at any vertex and just walk around the edges, getting lower and lower until we come to the bottom. 
 
-<img src="https://github.com/neil826t/stat386-projects/blob/main/assets/images/Simplex-method-3-dimensions.png" alt="" style="width:150px;"/> [Image source](https://commons.wikimedia.org/wiki/File:Simplex-method-3-dimensions.png)
+<img src="https://github.com/neil826t/stat386-projects/blob/main/assets/images/Simplex-method-3-dimensions.png" alt="" style="width:150px;"/> 
+
+[Image source](https://commons.wikimedia.org/wiki/File:Simplex-method-3-dimensions.png)
 
 The algorithm is mathematically simple enough that I have done it by hand and coded it in Python. A portion of my code is shown below, and the full result is pushed [here](https://github.com/neil826t/Coursework/blob/main/Applied_and_Computational_Math/simplex.py).
 
