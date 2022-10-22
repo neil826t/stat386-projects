@@ -55,4 +55,4 @@ I read Spotify's [Developer Policy](https://developer.spotify.com/policy/). Sinc
 
 ## Conclusion
 
-In summary, I'm pretty happy that Spotify and _Spotipy_ have provided these resources for us to use for free. Using an API can be as simple as a quick `pip install` and then `import`, with a good look at documentation. Here I made a dataframe out of one of my Spotify playlists, and I encourage you to do something different when you use the API. Next time I will be analyzing this dataframe, to see if popularity is correlated with any of the other features!
+In summary, I'm pretty happy that Spotify and _Spotipy_ have provided these resources for us to use for free. Using an API can be as simple as a quick `pip install` and then `import`, with a good look at documentation. Here I made a dataframe out of one of my Spotify playlists, and I encourage you to do something different when you use the API. Next time I will be analyzing this dataframe; leave a comment to suggest what I should analyze!
