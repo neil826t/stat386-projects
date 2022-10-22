@@ -32,7 +32,7 @@ spotify = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id, clien
 ```
 I obtained my `client_id` and `client_secret` codes/keys by logging into [Spotify for Developers](https://developer.spotify.com/dashboard/applications) (at least available to all who have Spotify premium accounts), creating an application, and grabbing the two keys shown in the image below, which you can see after clicking "SHOW CLIENT SECRET".
 
-
+<img src="https://www.mathworks.com/help/examples/optim/win64/tutdemo_01.png" alt=""/>
 <img src="https://user-images.githubusercontent.com/35595513/181067884-51cf3ea9-85f2-415f-aee7-4053a675b061.jpg" alt="" style="width:400px;"/>
 <img src="../assets/images/Spotify%20App.png" alt="" style="width:400px;"/>
 
