@@ -32,9 +32,9 @@ spotify = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id, clien
 ```
 I obtained my `client_id` and `client_secret` codes/keys by logging into [Spotify for Developers](https://developer.spotify.com/dashboard/applications) (at least available to all who have Spotify premium accounts), creating an application, and grabbing the two keys shown in the image below, which you can see after clicking "SHOW CLIENT SECRET".
 
-<img src="https://www.mathworks.com/help/examples/optim/win64/tutdemo_01.png" alt=""/>
+<img src="https://github.com/neil826t/stat386-projects/blob/main/assets/images/playlist_df_img.png" alt="playlist_df"/>
 <img src="https://user-images.githubusercontent.com/35595513/181067884-51cf3ea9-85f2-415f-aee7-4053a675b061.jpg" alt="" style="width:400px;"/>
-<img src="../assets/images/Spotify%20App.png" alt="" style="width:400px;"/>
+<img src="assets/images/Spotify%20App.png" alt="" style="width:400px;"/>
 
 ## My focus playlist
 
@@ -57,3 +57,4 @@ I read Spotify's [Developer Policy](https://developer.spotify.com/policy/). Sinc
 
 ## Conclusion
 
+In summary, I'm pretty happy that Spotify and _Spotipy_ have provided these resources for us to use for free. Using an API can be as simple as a quick `pip install` and then `import`, with a good look at documentation. Here I made a dataframe out of one of my Spotify playlists, and I encourage you to do something different when you use the API. Next time I will be analyzing this dataframe, to see if popularity is correlated with any of the other features!
