@@ -32,6 +32,8 @@ spotify = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id, clien
 ```
 I obtained my `client_id` and `client_secret` codes/keys by logging into [Spotify for Developers](https://developer.spotify.com/dashboard/applications) (at least available to all who have Spotify premium accounts), creating an application, and grabbing the two keys shown in the image below, which you can see after clicking "SHOW CLIENT SECRET".
 
+
+<img src="https://user-images.githubusercontent.com/35595513/181067884-51cf3ea9-85f2-415f-aee7-4053a675b061.jpg" alt="" style="width:400px;"/>
 <img src="../assets/images/Spotify%20App.png" alt="" style="width:400px;"/>
 
 ## My focus playlist
@@ -47,9 +49,11 @@ My steps were (very quickly):
 - Putting all those songs into a pandas DataFrame with `pd.DataFrame.from_dict()`
 - Building new columns with `pd.Series.apply`
 
+See the full code in [**this repository**](https://github.com/neil826t/Spotify_API_stats386)
+
 ## Ethics and Legality
 
 I read Spotify's [Developer Policy](https://developer.spotify.com/policy/). Since I was just working with my own data, there are no issues with visualizing and posting my own data publicly. In fact, you can go look at the playlist yourself on Spotify's website [here](https://open.spotify.com/playlist/45JTnzWMn7TW1VJW69Wl6T).
 
 ## Conclusion
-This tutorial was likely insufficient to teach the in depth features of what the Simplex method does, or how to use SciPy’s optimize.linprog method, so if you’re interested in implementing linear optimization into your work, I would recommend diving deeper into understanding the linear constraints and objective function. I hope you enjoy optimization as much as I do, and I challenge you to not only try optimization in Python but also in your daily life - breaking down decisions into logical pieces can sometimes be very useful.
+
