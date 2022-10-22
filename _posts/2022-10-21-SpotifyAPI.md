@@ -32,15 +32,15 @@ spotify = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id, clien
 ```
 I obtained my `client_id` and `client_secret` codes/keys by logging into [Spotify for Developers](https://developer.spotify.com/dashboard/applications) (at least available to all who have Spotify premium accounts), creating an application, and grabbing the two keys shown in the image below, which you can see after clicking "SHOW CLIENT SECRET".
 
-<img src="https://github.com/neil826t/stat386-projects/blob/main/assets/images/playlist_df_img.PNG" alt="playlist_df"/>
+<img src="https://github.com/neil826t/stat386-projects/blob/main/assets/images/playlist_df_img.png" alt="playlist_df"/>
 <img src="https://user-images.githubusercontent.com/35595513/181067884-51cf3ea9-85f2-415f-aee7-4053a675b061.jpg" alt="" style="width:400px;"/>
-<img src="assets/images/Spotify%20App.PNG" alt="spotify app w" style="width:400px;"/>
+<img src="assets/images/Spotify%20App.png" alt="spotify app w" style="width:400px;"/>
 
 ## My focus playlist
 
 After exploring many of _Spotipy_'s methods and Spotify's [possible endpoints](https://developer.spotify.com/documentation/web-api/reference/#/), I was excited to make a dataset containing songs as rows. I picked one of my biggest playlist, the one I often listen to while doing homework or work. It is called Focus. There are 762 songs, enough to do good analysis. I kept a couple of the columns but made a few more, since for some columns the value was not a number or even a categorical variable but a whole json object (in Python's case a dictionary). I ended up with this dataframe:
 
-<img src="../assets/images/playlist_df_img.PNG" alt="3" style="width:600px;"/>
+<img src="../assets/images/playlist_df_img.png" alt="3" style="width:600px;"/>
 
 My steps were (very quickly):
 - Getting all my playlists with `spotify.user_playlists(my_username)['items']`
