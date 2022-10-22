@@ -23,7 +23,33 @@ That's not even the best part. Sometimes those GET requests can get tricky to fo
 With the [_Spotipy_](https://spotipy.readthedocs.io/en/master/) Python library, you can query Spotify's API with Python functions and get data in dictionary type. 
 This is how I set it up: 
 
+```
+import spotipy
 
+from spotipy.oauth2 import SpotifyClientCredentials
+
+spotify = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id, client_secret))
+```
+I obtained my `client_id` and `client_secret` codes/keys by logging into [Spotify for Developers](https://developer.spotify.com/dashboard/applications) (at least available to all who have Spotify premium accounts), creating an application, and grabbing the two keys shown in the image below, which you can see after clicking "SHOW CLIENT SECRET".
+
+<img src="https://github.com/neil826t/stat386-projects/blob/main/assets/images/Spotify%20App.png" alt=""/>
+
+## My focus playlist
+
+After exploring many of _Spotipy_'s methods and Spotify's [possible endpoints](https://developer.spotify.com/documentation/web-api/reference/#/), I was excited to make a dataset containing songs as rows. I picked one of my biggest playlist, the one I often listen to while doing homework or work. It is called Focus. There are 762 songs, enough to do good analysis. I kept a couple of the columns but made a few more, since for some columns the value was not a number or even a categorical variable but a whole json object (in Python's case a dictionary). I ended up with this dataframe:
+
+<img src="https://github.com/neil826t/stat386-projects/blob/main/assets/images/playlist_df_img.png" alt=""/>
+
+My steps were (very quickly):
+- Getting all my playlists with `spotify.user_playlists(my_username)['items']`
+- Getting the URI associated with my focus playlist
+- Getting all the songs from that playlist with `spotify.playlist_items(focus_playlist_uri)['items']`
+- Putting all those songs into a pandas DataFrame with `pd.DataFrame.from_dict()`
+- Building new columns with `pd.Series.apply`
+
+## Ethics and Legality
+
+I read Spotify's [Developer Policy](https://developer.spotify.com/policy/). Since I was just working with my own data, there are no issues with visualizing and posting my own data publicly. In fact, you can go look at the playlist yourself on Spotify's website [here](https://open.spotify.com/playlist/45JTnzWMn7TW1VJW69Wl6T).
 
 ## Conclusion
 This tutorial was likely insufficient to teach the in depth features of what the Simplex method does, or how to use SciPy’s optimize.linprog method, so if you’re interested in implementing linear optimization into your work, I would recommend diving deeper into understanding the linear constraints and objective function. I hope you enjoy optimization as much as I do, and I challenge you to not only try optimization in Python but also in your daily life - breaking down decisions into logical pieces can sometimes be very useful.
