@@ -4,7 +4,7 @@ title:  "Spotify API made easy with _Spotipy_"
 date:   2022-09-22
 author: Neil Thompson
 description: Making a pandas dataframe of your Spotify playlist
-image: assets/images/piano.png
+image: assets/images/Simplex-method-3-dimensions.png
 ---
 
 ## Introduction
@@ -33,6 +33,7 @@ spotify = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id, clien
 I obtained my `client_id` and `client_secret` codes/keys by logging into [Spotify for Developers](https://developer.spotify.com/dashboard/applications) (at least available to all who have Spotify premium accounts), creating an application, and grabbing the two keys shown in the image below, which you can see after clicking "SHOW CLIENT SECRET".
 
 <img src="https://github.com/neil826t/stat386-projects/blob/main/assets/images/Spotify%20App.png" alt=""/>
+<img src="https://www.mathworks.com/help/examples/optim/win64/tutdemo_01.png" alt=""/>
 
 ## My focus playlist
 
