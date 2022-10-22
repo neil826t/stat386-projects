@@ -38,7 +38,7 @@ I obtained my `client_id` and `client_secret` codes/keys by logging into [Spotif
 
 After exploring many of _Spotipy_'s methods and Spotify's [possible endpoints](https://developer.spotify.com/documentation/web-api/reference/#/), I was excited to make a dataset containing songs as rows. I picked one of my biggest playlist, the one I often listen to while doing homework or work. It is called Focus. There are 762 songs, enough to do good analysis. I kept a couple of the columns but made a few more, since for some columns the value was not a number or even a categorical variable but a whole json object (in Python's case a dictionary). I ended up with this dataframe:
 
-<img src="https://neil826t.github.io/stat386-projects/assets/images/playlist_df_img.png" alt="playlist_df" style="width:600px;"/>
+<img src="https://neil826t.github.io/stat386-projects/assets/images/playlist_df_img.png" alt="playlist_df" style="width:800px;"/>
 
 My steps were (very quickly):
 - Getting all my playlists with `spotify.user_playlists(my_username)['items']`
