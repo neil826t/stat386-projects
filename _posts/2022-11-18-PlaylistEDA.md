@@ -3,7 +3,7 @@ layout: post
 title:  "What's _really_ going on in my Spotify playlist"
 date:   2022-11-18
 author: Neil Thompson
-description: Exploratative Data Analysis: With a bit of exploration, we learn and see a whole bunch of things about my _Focus_ playlist without listening to a single second of music.
+description: With a bit of exploration, we learn and see a whole bunch of things about my _Focus_ playlist without listening to a single second of music.
 image: assets/images/violin_plot.png
 ---
 
