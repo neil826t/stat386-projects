@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Spotify API made easy with _Spotipy_"
-date:   2022-09-22
+date:   2022-10-21
 author: Neil Thompson
 description: Making a pandas dataframe of your Spotify playlist
 image: assets/images/piano.jpg
