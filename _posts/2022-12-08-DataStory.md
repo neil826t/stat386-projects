@@ -35,3 +35,5 @@ The graphic below tells the story of the kinds of songs in my playlist, with the
 
 ## Conclusion
 Did I really answer my question, "What is it about the songs in my playlist that help me focus?" I got somewhere, but I think there is a lot more to explore. Spotify has tons more data about each song than I showcased throughout this project, and I could dive into deeper musical elements. I could also compare with other playlists. Hopefully, however, this gave you as good of a sense as it me of what kind of cool stories these tools are capable of telling. This project has definitely changed my life in terms of my willingness to dive into an API or any data journey I might not have thought was possible or worth my time before. Please comment below with any ideas you have that could make this project/story more interesting or useful.
+
+See all the code used for this project in [my Github repository](https://github.com/neil826t/Spotify_API_stats386). Feel free to clone and use it for your own projects.
